@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沼气绿色能源循环经济演示</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- GSAP 动画库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- QRCode.js 库 -->
+    <script src="qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Biogas Green Energy Circular Economy Demo</h1>
+            <div id="qrcode-container">
+                <div id="qrcode"></div>
+                <p>Scan the QR code to view the demo</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="animation-container">
+                <!-- Animation scene will be displayed here -->
+                <div class="scene" id="scene1">
+                    <div class="biomass">Organic Waste</div>
+                    <div class="digester">Biogas Digester</div>
+                    <div class="gas">Biogas</div>
+                    <div class="energy">Energy Utilization</div>
+                    <div class="fertilizer">Organic Fertilizer</div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="playBtn">Play</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+
+            <div class="description">
+                <h2>Biogas Energy Circular Utilization Process</h2>
+                <div class="steps">
+                    <div class="step">
+                        <h3>1. Organic Waste Collection</h3>
+                        <p>Collect agricultural waste, kitchen waste, and other organic materials</p>
+                    </div>
+                    <div class="step">
+                        <h3>2. Anaerobic Digestion</h3>
+                        <p>Anaerobic digestion in the biogas digester produces biogas</p>
+                    </div>
+                    <div class="step">
+                        <h3>3. Energy Conversion</h3>
+                        <p>Biogas can be used for power generation, heating, and other energy uses</p>
+                    </div>
+                    <div class="step">
+                        <h3>4. Organic Fertilizer</h3>
+                        <p>The residue after fermentation can be used as high-quality organic fertilizer</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
